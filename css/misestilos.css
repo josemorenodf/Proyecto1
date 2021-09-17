@@ -1,0 +1,70 @@
+    /* Para colocar comentarios */
+
+    :root{ /* Se utiliza para definir variables - constantes*/
+        /*Paleta de colores de nuestros sitio*/
+        --blanco:#ffffff;
+        --oscuro:#212121;
+        --primario:#ffc107;
+        --secundario:#0097a7;
+        --gris:#757575;
+        --ejemplo3:#0731ff94;
+    }
+    
+    /*Se configuran los selectores html y body para que trabajar con rem (se adactan mejor para los pantallas (TV, Table, Navegadores)) se haga mas sencillo*/
+    html{   
+        font-size: 62.5%;
+    }
+    
+    body{ /*Selectores con etiquetas*/
+        font-size: 16px; /*  1rem = 10px*/
+        font-family: 'Lato', sans-serif;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Krub', sans-serif;
+    }
+    
+    .titulo{
+        text-align:center;
+        font-size: 3.8rem; /*Equivalen a 38px*/ 
+        color:var(--oscuro);
+    }
+    
+    span{
+        color: green;
+    }
+
+   
+
+    .titulo span {
+        font-size: 8rem;
+        color:aqua;
+    }
+
+     h1.titulo span { /*Este selector es mas especifico*/
+        font-size: 8rem;
+        color:#ffc107;
+    }
+
+    /*Configuracion de la barra de navegacion*/
+
+    .contenedor{
+        width: 120rem;  /*1200px estandar*/
+        /*margin-left: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;*/
+        /*hace lo mismo que las 4 instrucciones anteriores*/
+        margin: 0 auto;
+    }
+
+    .nav-bg{
+        background-color: var(--secundario);
+    }
+
+    .navegacion-principal{
+        padding: 1rem;
+    }
+
+    .navegacion-principal a{
+        color: var(--blanco);
+        text-decoration: none;
+    }

@@ -5,54 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto WEB NRC 53407</title>
-
-    <style>
-    p{font-size: 15px; color: darkred}
-    </style>
-
-    <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="preload" href="/css/normalize.css" as="style"> <!--Para que el sitio web se comporte mas rapido-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/misestilos.css" as="style"> <!--Para que el sitio web se comporte mas rapido-->
+    <link href="/css/misestilos.css" rel="stylesheet"> <!--rel: relacion del documento actual con la hoja de estilos-->
 </head>
 <body>
 
     <header>
-        <!-- Estilos dentro de la etiqueta -->
-        <h1>Contextos generales de HTML</h1><br><br>
+        <!--Estilos dentro de la etiqueta-->
+        <h1 class="titulo">Contextos generales de <span>HTML</span></h1>
     </header>
 
-    <nav>
-        <a href="html.html">¿Qué es HTML?</a>
-        <a href="#">¿Qué es CSS?</a>
-        <a href="#">¿Qué es JS?</a>
-    </nav>
-
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="html.html">¿Qué es HTML?</a>
+            <a href="#">¿Qué es CSS?</a>
+            <a href="#">¿Qué es JS?</a>
+        </nav>
+    </div>
     <main>
-        <h2>Etiqueta MAIN para incluir la información más relevante de nuestra página web</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut tempora provident expedita praesentium sunt numquam maiores placeat fugiat, quas deleniti, neque veritatis sed possimus. Molestiae ipsum perspiciatis autem error quos.</p>
-    </main>
+        <div>
+            <h2>Etiqueta MAIN para incluir la información más relevante de nuestra página web</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste voluptas natus at architecto culpa libero excepturi, perspiciatis quidem debitis dolores deserunt dolorum modi ea suscipit eaque dolorem voluptatum doloribus fuga!
+            </p>
+        </div>
 
-    <section>
-    <h3 id="texto1">Historia de HTML</h3>
-    <p class="texto2">
-        HTML apareció por primera vez en 1991 en el lanzamiento de la web. Su función es la gestión y organización del contenido. Así que en HTML puedes escribir lo que deseas mostrar en la página: texto, enlaces, imágenes, etc. <br>
+        <div>
+            <section>
+            <h3 id="texto1">Historia de HTML</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+              </svg>
+            <P class="texto2">
+                HTML apareció por primera vez en 1991 en el lanzamiento de la web. Su función es la gestión y organización del contenido. Así que en HTML puedes escribir lo que deseas mostrar en la página: texto, enlaces, imágenes, etc.<br><br>
+                Puedes decir: "Este es mi título, este es mi menú, aquí está el texto principal de la página, aquí hay una visualización de la imagen, etc."
+            </P>
+        </section>
+        </div>
+        <div>
+            <section>
+                <h3>Contenido con información relevante</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-section" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 20h.01" />
+                    <path d="M4 20h.01" />
+                    <path d="M8 20h.01" />
+                    <path d="M12 20h.01" />
+                    <path d="M16 20h.01" />
+                    <path d="M20 4h.01" />
+                    <path d="M4 4h.01" />
+                    <path d="M8 4h.01" />
+                    <path d="M12 4h.01" />
+                    <path d="M16 4l0 0" />
+                    <rect x="4" y="8" width="16" height="8" rx="1" />
+                </svg>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis beatae atque corrupti libero totam ratione unde mollitia ut fugit, eaque magnam reiciendis voluptatum placeat id, est suscipit optio molestias.
+                </P>    
+            </section>    
+        </div>
+         <div>
+            <aside>    
+                <img src="/imgs/logo-MinTIC.png" alt="HTML" width="350" height="90">
+            </aside>
+        </div>
+    </main>  
+    
+    <section>   
+        <h2>Contacto</h2>
 
-        Puedes decir: "Este es mi título, este es mi menú, aquí está el texto principal de la página, aquí hay una visualización de la imagen, etc."
-    </p>
+        <form action="">
+
+            <fieldset>
+                <legend>Contáctenos llenando todos los campos</legend>
+
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label>Telefono</label>
+                    <input type="tel" placeholder="Tu teléfono">
+                </div>
+                <div>
+                    <label>Correo</label>
+                    <input type="email" placeholder="Tu e-mail">
+                </div>
+                <div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+            
+        </form>
+
     </section>
-
-    <section>
-        <h3>Contenido con información relevante</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis beatae atque corrupti libero totam ratione unde mollitia ut fugit, eaque magnam reiciendis voluptatum placeat id, est suscipit optio molestias.
-        </p>
-    </section>
-
-    <aside>
-    <img src="/imgs/logo-MinTIC.png" alt="HTML" width="500" height="300">
-    </aside>
 
     <footer>
-        <h3>Derechos reservados @copy; 2010-2011</h3>
+            <h3>Derechos reservados @copy 2010-2011
     </footer>
 
 </body>
